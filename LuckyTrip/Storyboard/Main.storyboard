@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qvI-Wg-dnJ">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="SEt-yH-Q2u">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BG3-hC-O3w" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="MainViewController" id="qvI-Wg-dnJ" customClass="MainViewController" customModule="LuckyTrip" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mRh-QN-UHn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main_image" translatesAutoresizingMaskIntoConstraints="NO" id="mNG-wp-Rb7">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The ultimate trip advisor for the your next adventure" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ehW-P6-tMa">
+                                <rect key="frame" x="30" y="380" width="315" height="52"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lucky Trip" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ggg-Z0-tYP">
+                                <rect key="frame" x="92.666666666666686" y="314" width="190" height="46"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="35"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gy5-Jr-5W4">
+                                <rect key="frame" x="30" y="668" width="315" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="fLx-Oi-UcL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="25"/>
+                                <state key="normal" title="Browse">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="browseAction:" destination="qvI-Wg-dnJ" eventType="touchUpInside" id="GiT-Ws-dax"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1Em-AT-X1D" firstAttribute="trailing" secondItem="Gy5-Jr-5W4" secondAttribute="trailing" constant="30" id="3Dn-ho-NsH"/>
+                            <constraint firstItem="ehW-P6-tMa" firstAttribute="centerX" secondItem="mRh-QN-UHn" secondAttribute="centerX" id="3eJ-VD-RZ0"/>
+                            <constraint firstAttribute="bottom" secondItem="mNG-wp-Rb7" secondAttribute="bottom" id="Cze-ua-a8B"/>
+                            <constraint firstItem="mNG-wp-Rb7" firstAttribute="top" secondItem="mRh-QN-UHn" secondAttribute="top" id="FhP-UV-exM"/>
+                            <constraint firstItem="ehW-P6-tMa" firstAttribute="centerY" secondItem="mRh-QN-UHn" secondAttribute="centerY" id="G8W-tv-Mfe"/>
+                            <constraint firstAttribute="trailing" secondItem="ehW-P6-tMa" secondAttribute="trailing" constant="30" id="HHQ-m2-oTQ"/>
+                            <constraint firstItem="1Em-AT-X1D" firstAttribute="bottom" secondItem="Gy5-Jr-5W4" secondAttribute="bottom" constant="60" id="OIL-Mw-b5h"/>
+                            <constraint firstAttribute="trailing" secondItem="mNG-wp-Rb7" secondAttribute="trailing" id="Q80-mj-46w"/>
+                            <constraint firstItem="ehW-P6-tMa" firstAttribute="leading" secondItem="mRh-QN-UHn" secondAttribute="leading" constant="30" id="RMg-nW-pwm"/>
+                            <constraint firstItem="mNG-wp-Rb7" firstAttribute="leading" secondItem="mRh-QN-UHn" secondAttribute="leading" id="UTT-sS-1Bp"/>
+                            <constraint firstItem="Gy5-Jr-5W4" firstAttribute="leading" secondItem="1Em-AT-X1D" secondAttribute="leading" constant="30" id="nmR-K4-elU"/>
+                            <constraint firstItem="Ggg-Z0-tYP" firstAttribute="centerX" secondItem="mRh-QN-UHn" secondAttribute="centerX" id="rN0-gP-Xfm"/>
+                            <constraint firstItem="ehW-P6-tMa" firstAttribute="top" secondItem="Ggg-Z0-tYP" secondAttribute="bottom" constant="20" id="y8W-CC-61D"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1Em-AT-X1D"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ppd-7C-Va4"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1002.4" y="91.625615763546804"/>
+        </scene>
+        <!--Room Picker View Controller-->
+        <scene sceneID="MgZ-OZ-Crx">
+            <objects>
+                <viewController storyboardIdentifier="RoomPickerViewController" id="Zk1-gf-Zi7" customClass="RoomPickerViewController" customModule="LuckyTrip" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dHB-oZ-vbf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zJ9-gi-Kma">
+                                <rect key="frame" x="329" y="60" width="30" height="30"/>
+                                <state key="normal" image="close">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="dismissAction:" destination="Zk1-gf-Zi7" eventType="touchUpInside" id="e01-ha-FkV"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cIX-2y-LZt">
+                                <rect key="frame" x="0.0" y="108.66666666666669" width="375" height="669.33333333333326"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Zk1-gf-Zi7" id="kmi-Fo-rhF"/>
+                                    <outlet property="delegate" destination="Zk1-gf-Zi7" id="Cc3-KG-VZ6"/>
+                                </connections>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rooms" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bVD-nD-QZA">
+                                <rect key="frame" x="142.66666666666666" y="60" width="90" height="32.666666666666657"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="bVD-nD-QZA" firstAttribute="top" secondItem="Ill-4r-bHP" secondAttribute="top" constant="16" id="F7r-G9-dOi"/>
+                            <constraint firstItem="Ill-4r-bHP" firstAttribute="trailing" secondItem="zJ9-gi-Kma" secondAttribute="trailing" constant="16" id="K6l-kV-H0O"/>
+                            <constraint firstItem="cIX-2y-LZt" firstAttribute="trailing" secondItem="Ill-4r-bHP" secondAttribute="trailing" id="ewJ-Rb-KTi"/>
+                            <constraint firstItem="cIX-2y-LZt" firstAttribute="leading" secondItem="Ill-4r-bHP" secondAttribute="leading" id="ifr-28-gYu"/>
+                            <constraint firstItem="zJ9-gi-Kma" firstAttribute="top" secondItem="bVD-nD-QZA" secondAttribute="top" id="jo7-Oj-Zte"/>
+                            <constraint firstItem="bVD-nD-QZA" firstAttribute="centerX" secondItem="dHB-oZ-vbf" secondAttribute="centerX" id="mnp-Zq-aAC"/>
+                            <constraint firstItem="cIX-2y-LZt" firstAttribute="bottom" secondItem="Ill-4r-bHP" secondAttribute="bottom" id="sgC-ee-y4z"/>
+                            <constraint firstItem="cIX-2y-LZt" firstAttribute="top" secondItem="bVD-nD-QZA" secondAttribute="bottom" constant="16" id="uzS-mw-MWN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ill-4r-bHP"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="cIX-2y-LZt" id="1Ko-WJ-bjD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fFE-Ur-PkT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1815.2" y="91.625615763546804"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="close" width="30" height="30"/>
+        <image name="main_image" width="1024" height="684"/>
+    </resources>
+</document>
