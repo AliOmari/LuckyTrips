@@ -15,11 +15,20 @@ class RoomPickerInteractor: RoomPickerInteractorProtocol {
     weak var presenter: RoomPickerPresenterProtocol?
     let searchService = SearchService()
     
+    //AO getting data logic must be added to interactor
     func getRooms() {
+        //AO if internet available get from remote
+        //if isConnected{}
         searchService.search(success: {[weak self] (rooms) in
             self?.presenter?.roomsLoaded(rooms: rooms)
         }) { (error) in
+            //AO get from database
             self.presenter?.roomsLoadingFailed(error: error.localizedDescription)
         }
+        
+        //AO get from database
+        /*else {
+            self?.presenter?.roomsLoaded(rooms: //get from database])
+         }*/
     }
 }
